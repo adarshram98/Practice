@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .grid {
+            padding: 20px 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    container
+    <div class="container" style="background:skyblue">
+        <h1>fixed container</h1>
+    </div>
+    <div class="container-fluid" style="background-color: brown;">
+        <h2>fluid container</h2>
+    </div>
+
+    Grid
+    <div class="container">
+        <div class="row" style="background-color: cyan;">
+            <div class="col-sm-6  grid">col-sm-6</div>
+            <div class="col-sm-6 grid">col-sm-6</div>
+        </div>
+        <div class="row" style="background-color:brown;">
+            <div class="col-md-6 col-lg-3  grid">col-sm-6</div>
+            <div class="col-md-6 col-lg-3 grid">col-sm-6</div>
+            <div class="col-md-6  grid col-lg-3">col-sm-6</div>
+            <div class="col-md-6 grid col-lg-3">col-sm-6</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 grid">col-sm-6</div>
+            <div class="col-3 grid">col-sm-6</div>
+            <div class="col-3 grid">col-sm-6</div>
+            <div class="col-3 grid">col-sm-6</div>
+        </div>
+    </div>
+
+    Flex
+    <div class="container">
+        <div class="row" style="background-color: cyan;">
+            <div class="col-md  grid">flex</div>
+            <div class="col-md grid">flex</div>
+        </div>
+
+        <div class="row" style="background-color: gray;">
+            <div class="col-md  grid">flex</div>
+            <div class="col-md-8 grid">flex</div>
+            <div class="col-md grid">flex</div>
+        </div>
+
+        <div class="row justify-content-md-center" style="background-color: olivedrab;">
+            <div class="col-md-2 flex-last grid">1 flex</div>
+            <div class="col-md-2 grid"> 2 flex</div>
+            <div class="col-md-2 grid"> 3 lex</div>
+        </div>
+
+    </div>
+
+    Jumbotrons
+
+
+    <div class="jumbotron jumbotron-fluid bg-info text-white" style="background-color: #aaa;">
+        <div class="container">
+            <h1>Welcome to Bootstrap</h1>
+            <p>This is a responsive framework</p>
+        </div>
+
+    </div>
+    Utilities and Typography
+
+
+    Cards
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <div class="card-block">
+
+                        <h3 class="card-title text-center">
+                            Html
+                        </h3>
+                        <p>
+                            dwdwqdwdwqdwcdndk h.khekjfefbj
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            Nav
+            <h2 class="display-4 text-center py-5 flex-column flex-md-row">Meet The Students</h2>
+            <nav class="nav justify-content-center">
+                <a class="nav-link  " href="#kishore">Kishore</a>
+                <a class="nav-link " href="#keshav" data-toggle="tab">Keshav</a>
+                <a class="nav-link" href="" data-toggle="tab">Sridhar</a>
+                <a class="nav-link" href="" data-toggle="tab">Kishore</a>
+            </nav>
+
+            <div class="tab-content py-5">
+                <div class="tab-pane active" id="keshav">
+                    <h3>
+                        Keshav
+                    </h3>
+                    <p>
+                        vuhife ihu hu efewifewfh iuhhivvjbj fof f
+                    </p>
+
+                </div>
+                <div class="tab-pane" id="kishore">
+                    <h3>
+                        Kishore
+                    </h3>
+                    <p>
+                        vuhife ihu hu efewifewfh iuhhivvjbj fof f
+                    </p>
+
+                </div>
+                <div class="tab-pane">
+                    <h3>
+                        Sri Dhar
+                    </h3>
+                    <p>
+                        vuhife ihu hu efewifewfh iuhhivvjbj fof f
+                    </p>
+
+                </div>
+                <div class="tab-pane">
+                    <h3>
+                        Keshav
+                    </h3>
+                    <p>
+                        vuhife ihu hu efewifewfh iuhhivvjbj fof f
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
